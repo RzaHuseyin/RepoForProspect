@@ -5,6 +5,8 @@ window.onload=function(){
 		var ctx1 =canvas1.getContext("2d");
 		var ctx2 =canvas2.getContext("2d");
 		var ctx3 =canvas3.getContext("2d");
+		var txt=0
+		var count="0"
 		forTestCanvas(ctx1,canvas1);
 		forTestCanvas(ctx2,canvas2);
 		forTestCanvas(ctx3,canvas3);
@@ -24,23 +26,32 @@ window.onload=function(){
 
 			ctx.beginPath();
 			ctx.strokeStyle= bgcolor;
-			ctx.lineWidth=20;
-			ctx.arc(80,80,60,0,Math.PI*2,false);
+			ctx.lineWidth=10;
+			ctx.arc(W/3,H/2,60,0,Math.PI*2,false);
 			ctx.stroke();
 
 
 			var radians = degrees * Math.PI/180;
 			ctx.beginPath();
 			ctx.strokeStyle= color;
-			ctx.lineWidth=20;
-			ctx.arc(80,80,60,0 - 90*Math.PI/180, radians-90*Math.PI/180,false);
+			ctx.lineWidth=10;
+			ctx.arc(W/3,H/2,60,0 - 90*Math.PI/180, radians-90*Math.PI/180,false);
 			ctx.stroke();
 			//Add the text in center 
 			ctx.fillStyle=color;
-			ctx.font="20px arila";
-			text= Math.floor(degrees/360*100) *50 +"\n APPLICANTS";
+			ctx.font="30px arila";
+			text= Math.floor(degrees/360*100) *30;
+			//span text edit
+			count++;
+			txt+=text;
+			if (count>2) {
+				$(".charts_footer div span span").text(txt)
+				txt=0;
+				count=0;
+			}
+			//end span text edit
 			text_width=ctx.measureText(text).width;
-			ctx.fillText(text,W/2-text_width/2,H/2+15); 
+			ctx.fillText(text,W/2.3-text_width,H/2+15); 
 		}
 		function draw(){
 			new_degrees=Math.round(Math.random()*360);
@@ -48,7 +59,7 @@ window.onload=function(){
 			//This will animate the gauge to new positions
 			//The animation will take 1 second
 			//time for each frame is1 second / difference in degrees
-			animation_loop = setInterval(animate_to,1000/difference);
+			animation_loop = setInterval(animate_to,150);
 		}
 		function animate_to(){
 			if(degrees<new_degrees){
@@ -64,7 +75,7 @@ window.onload=function(){
 			init(ctx,canvas);
 		}
 		draw();
-		redraw_loop= setInterval(draw,2000);
+		redraw_loop= setInterval(draw,1000);
 
 	}
 }

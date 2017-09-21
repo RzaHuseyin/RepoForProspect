@@ -122,35 +122,37 @@ body {
 .container-fluid .row .col-md-10 .row #right .main {
   background-color: #ecf2f6;
   float: right; }
+  .container-fluid .row .col-md-10 .row #right .main > div {
+    margin: 0 auto;
+    width: 90%; }
   .container-fluid .row .col-md-10 .row #right .main .charts {
     min-height: 300px; }
-    .container-fluid .row .col-md-10 .row #right .main .charts .col-md-7 .row {
-      text-align: center; }
-
-#chartdiv-right {
-  width: 100%;
-  height: 200px;
-  font-size: 11px; }
-  #chartdiv-right .amcharts-chart-div a {
-    display: none !important; }
-
-#chartdiv-left {
-  width: 100%;
-  height: 100px;
-  font-size: 11px; }
-  #chartdiv-left .amcharts-chart-div a {
-    display: none !important; }
+    .container-fluid .row .col-md-10 .row #right .main .charts .col-md-7 .charts_left {
+      margin-top: 30px;
+      height: 170px; }
+    .container-fluid .row .col-md-10 .row #right .main .charts .col-md-5 .row #chartdiv-right {
+      width: 100%;
+      height: 200px;
+      font-size: 11px; }
+      .container-fluid .row .col-md-10 .row #right .main .charts .col-md-5 .row #chartdiv-right .amcharts-chart-div a {
+        display: none !important; }
+    .container-fluid .row .col-md-10 .row #right .main .charts .charts_footer {
+      text-align: center;
+      margin-top: 50px; }
+      .container-fluid .row .col-md-10 .row #right .main .charts .charts_footer > div > span span {
+        display: inline-block;
+        width: 40px; }
 
 #canvas1 {
   display: inline-block;
-  width: 250px; }
+  width: 280px; }
 
 #canvas2 {
   display: inline-block;
-  width: 250px; }
+  width: 280px; }
 
 #canvas3 {
   display: inline-block;
-  width: 250px; }
+  width: 280px; }
 
 /*# sourceMappingURL=style.css.map */

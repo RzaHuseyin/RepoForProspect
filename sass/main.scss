@@ -183,16 +183,42 @@ body{
 					.main{
 						background-color: #ecf2f6;
 						float: right;
+						>div{
+							margin: 0 auto;
+							width: 90%;
+						}
 						.charts{
 							min-height: 300px;
 							.col-md-7{
-								.row{
-									//height: 200px;
-									text-align:center;
+								.charts_left{
+									margin-top: 30px;
+									height: 170px;
 								}
 							}
 							.col-md-5{
 								.row{
+									#chartdiv-right {
+										width	: 100%;
+										height	: 200px;
+										font-size: 11px;
+										.amcharts-chart-div{
+											a{
+												display: none !important;
+											}
+										}
+									}
+								}
+							}
+							.charts_footer{
+								text-align: center;
+								margin-top: 50px;
+								>div{
+									>span{
+										span{
+											display: inline-block;
+											width: 40px;
+										}
+									}
 								}
 							}
 						}
@@ -217,43 +243,23 @@ body{
 	}
 }
 
-#chartdiv-right {
-	width		: 100%;
-	height		: 200px;
-	font-size	: 11px;
-	.amcharts-chart-div{
-		a{
-			display: none !important;
-		}
-	}
-	
-}
-#chartdiv-left {
-	width		: 100%;
-	height		: 100px;
-	font-size	: 11px;
-	.amcharts-chart-div{
-		a{
-			display: none !important;
-		}
-	}
-}
+
 
 #canvas1{
 	display: inline-block;
-	width: 250px;
+	width: 280px;
 	// margin: 100px auto;
 
 }
 #canvas2{
 	display: inline-block;
-	width: 250px;
+	width: 280px;
 	// margin: 100px auto;
 
 }
 #canvas3{
 	display: inline-block;
-	width: 250px;
+	width: 280px;
 	// margin: 100px auto;
 
 }
