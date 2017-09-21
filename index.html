@@ -1,0 +1,200 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Prospect</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+       <!-- amchart -->
+        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+        <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+        <!-- end amcharts -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="row ">
+                        <section id="left">
+                            <div class="headerLeft">
+                                <div>
+                                    <img src="img/dennis_ritchie.jpg" class="img-responsive" alt="profile-image">
+                                </div>
+                                <div>
+                                    <h4>Newton Barley <i class="fa fa-angle-down" aria-hidden="true"></i></h4>
+                                </div>
+                            </div>
+                            <div class="mainList">
+                                <h6>Main</h6>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i>Jobs</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>Resumes</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i>Tasks</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i>Calendar</a></li>
+                                </ul>
+                            </div>
+                            <div class="adminList">
+                                <h6>Admin</h6>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Users</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Locations</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-code-fork" aria-hidden="true"></i>Workflows</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-files-o" aria-hidden="true"></i>Job Boards</a></li>
+                                    <li class="list-group-item"><a href="#"><i class="fa fa-recycle" aria-hidden="true"></i>Social</a></li>
+                                </ul>
+                            </div>
+                            <div class="categoriesList">
+                                <h6>Categories</h6>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item"><input type="checkbox" checked=""> Administrative</li>
+                                    <li class="list-group-item"><input type="checkbox" unchecked> Design</li>
+                                    <li class="list-group-item"><input type="checkbox"> Executive</li>
+                                    <li class="list-group-item"><input type="checkbox"> Human Resources</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <section id="right">
+                            <div class="nav">
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a><input type="search" placeholder="Search for a job task or resume"></li>
+                                    <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="headerRight">
+                                <div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <h4>Customer Service Representative</h4>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i><p>San Francisco, CA</p> . <a href="#">Preview this post</a>
+                                        </div>                
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="row">
+                                            <div>asd</div>
+                                            <div>asd</div>
+                                            <div><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                                            <div>asd</div>
+                                        </div>                
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div>
+                                                <ul class="list-inline">
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                    <li>list1</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main">
+                                <div class="charts">
+                                    <div class="col-md-7">
+                                        <div class="row charts_header">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <canvas id="canvas1"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <canvas id="canvas2"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <canvas id="canvas3">zdfsdf</canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row charts_foo">
+                                            <div>
+                                                <a href="">Blablabla</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                      <div class="row">
+                                            <div id="chartdiv-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listinput">
+                                    <div class="col-md-8">
+                                        <div class="row">
+                                            <div><h4>sdasdasd</h4> <a href=""></a></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <a href=""><i>aa</i> <span>asdasd</span></a>
+                                            <a href=""><i>aa</i> <span>asdasd</span></a>
+                                            <a href=""><i>aa</i> <span>asdasd</span></a>
+                                            <div>
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Link to this Job</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio modi voluptatum omnis nisi molestias voluptas magni, culpa fugiat blanditiis sit accusamus numquam exercitationem quisquam quos iste eius ratione delectus.</p>
+                                                <input type="text">
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Use the Button Widget</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate reiciendis eligendi cupiditate maxime saepe libero assumenda, impedit, dolore amet, officiis labore. Quidem modi exercitationem tenetur numquam ipsa cumque, minima.</p>
+                                                <input type="text">
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Upload Resume by Email</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima consectetur distinctio omnis ducimus error! Doloribus eaque obcaecati facilis molestiae ex incidunt, iure, ut, commodi facere aliquam quis itaque magni.</p>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <script src="js/Chart.js"></script>
+        <script src="js/Chart.bundle.js"></script>
+    </body>
+</html>
