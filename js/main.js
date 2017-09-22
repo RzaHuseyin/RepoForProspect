@@ -2,22 +2,28 @@ window.onload=function(){
 		var canvas1 = document.getElementById("canvas1");
 		var canvas2 = document.getElementById("canvas2");
 		var canvas3 = document.getElementById("canvas3");
+
 		var ctx1 =canvas1.getContext("2d");
+		var color1="#47bac1"
+
 		var ctx2 =canvas2.getContext("2d");
+		var color2="#15a4fa"
+
 		var ctx3 =canvas3.getContext("2d");
+		var color3="#ae69af"
+
 		var txt=0
-		var count="0"
-		forTestCanvas(ctx1,canvas1);
-		forTestCanvas(ctx2,canvas2);
-		forTestCanvas(ctx3,canvas3);
-		function forTestCanvas(ctx,canvas){
+		var count=0
+		forTestCanvas(ctx1,canvas1, color1);
+		forTestCanvas(ctx2,canvas2, color2);
+		forTestCanvas(ctx3,canvas3, color3);
+		function forTestCanvas(ctx,canvas,color){
 		var W= canvas.width;
 		var H= canvas.height;
 		var degrees =0;
 		var new_degrees=0;
 		var difference= 0 ;
-		var color = "lightblue";
-		var bgcolor= "#222"
+		var bgcolor= "#d9e4eb"
 		var text;
 		var animation_loop,redraw_loop;
 		// background 
@@ -38,10 +44,10 @@ window.onload=function(){
 			ctx.arc(W/3,H/2,60,0 - 90*Math.PI/180, radians-90*Math.PI/180,false);
 			ctx.stroke();
 			//Add the text in center 
-			ctx.fillStyle=color;
+			ctx.fillStyle="#596679";
 			ctx.font="30px arila";
-			text= Math.floor(degrees/360*100) *30;
-			//span text edit
+			text= (Math.floor(degrees/360*100)+3) *20;
+			//    span text edit
 			count++;
 			txt+=text;
 			if (count>2) {
@@ -49,7 +55,7 @@ window.onload=function(){
 				txt=0;
 				count=0;
 			}
-			//end span text edit
+			//    end span text edit
 			text_width=ctx.measureText(text).width;
 			ctx.fillText(text,W/2.3-text_width,H/2+15); 
 		}
@@ -59,24 +65,19 @@ window.onload=function(){
 			//This will animate the gauge to new positions
 			//The animation will take 1 second
 			//time for each frame is1 second / difference in degrees
-			animation_loop = setInterval(animate_to,150);
+			animation_loop = setInterval(animate_to,10);
 		}
 		function animate_to(){
 			if(degrees<new_degrees){
 				degrees++;
 			}
-			else{
-				degrees--;
-			}
-			//clear animation if degrees = new degress
-			if(degrees==new_degrees){
+			else
+			{
 				clearInterval(animation_loop);
 			}
 			init(ctx,canvas);
 		}
 		draw();
-		redraw_loop= setInterval(draw,1000);
-
 	}
 }
 
@@ -100,22 +101,6 @@ $(document).ready(function(){
 		console.log(z)
 	});
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -207,8 +192,34 @@ var chart = AmCharts.makeChart( "chartdiv-right", {
 
 
 
+// for list click 
+$(".headerRight .col-md-12 ul li").click(function(event) {
+	$(".headerRight .col-md-12 ul li").css({
+		"borderBottomColor": 'transparent',
+		"color": '#8a95a5'
+	});
+	$(this).css({
+		"borderBottomColor": '#15a4fa',
+		"color": 'black'
+	});
+
+	/* Act on the event */
+});
 
 
+});
+var z=true;
+$( "#fa-angle-down" ).click(function() {
+	$(".charts").fadeToggle('slow', function() {
+	});
+	if(z){
+		$(this).addClass('fa-angle-down');
+		z=false;
+	}
+	else{
+		$(this).removeClass('fa-angle-down')
+		z=true;
+	}
 
-
+	/* Act on the event */
 });

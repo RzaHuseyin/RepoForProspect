@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -81,31 +81,31 @@
                             </div>
                             <div class="headerRight">
                                 <div>
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <div class="row">
                                             <h2>Customer Service Representative</h2>
-                                            <i class="fa fa-map-marker" aria-hidden="true"></i><p>San Francisco, CA</p> . <a href="#">Preview this post</a>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i><p>San Francisco, CA</p> <i class="fa fa-circle" aria-hidden="true"></i><a href="#">Preview this post</a>
                                         </div>                
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="row">
-                                            <div>asd</div>
-                                            <div>asd</div>      
+                                            <div><i class="fa fa-circle" aria-hidden="true">OPEN</i><!-- <span></span> --></div>
+                                            <div><i class="fa fa-bookmark" aria-hidden="true"></i></div>      
                                             <div><i class="fa fa-pencil" aria-hidden="true"></i></div>
-                                            <div>asd</div>
+                                            <div><i class="fa fa-trash" aria-hidden="true"></i></div>
                                         </div>                
                                     </div>
                                     <div class="col-md-12">
                                         <div class="row">
                                             <div>
                                                 <ul class="list-inline">
-                                                    <li>list1</li>
-                                                    <li>list1</li>
-                                                    <li>list1</li>
-                                                    <li>list1</li>
-                                                    <li>list1</li>
-                                                    <li>list1</li>
-                                                    <li>list1</li>
+                                                    <li class="list-group-item">Summary</li>
+                                                    <li class="list-group-item">Applicants</li>
+                                                    <li class="list-group-item">Job Board</li>
+                                                    <li class="list-group-item">Interviews</li>
+                                                    <li class="list-group-item">Activity</li>
+                                                    <li class="list-group-item">Broadcast</li>
+                                                    <li class="list-group-item">Notfications</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="main">
-                                <div class="charts">
+                                <div class="charts ">
                                     <div class="col-md-7">
                                         <div class="row charts_left">
                                             <div class="col-md-4">
@@ -128,13 +128,13 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="row">
-                                                    <canvas id="canvas3">zdfsdf</canvas>
+                                                    <canvas id="canvas3"></canvas>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row charts_footer">
                                             <div>
-                                                <span>TOTALS Out of <span>0</span> views</span>
+                                                <span>TOTALS<i class="fa fa-circle" aria-hidden="true"></i> Out of <span>0</span> views</span>
                                             </div>
                                         </div>
                                     </div>
@@ -153,39 +153,101 @@
 
                                     </div>
                                 </div>
+                                <div id="js_chards">
+                                    <i class="fa fa-angle-up "  id ="fa-angle-down" aria-hidden="true"></i>
+                                </div>
                                 <div class="listinput">
                                     <div class="col-md-8">
                                         <div class="row">
-                                            <div><h4>sdasdasd</h4> <a href=""></a></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
-                                            <div><h4>sdasdasd</h4> <p>asaSas</p></div>
+                                            <div class="table_responsive">
+                                                <table class="table">
+                                                <tr>
+                                                    <th>Job Description</th>
+                                                    <th><a href="" class="fa fa-pencil"> Edit</a></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Position Title</td>
+                                                    <td>Customer Service Representative</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Location</td>
+                                                    <td>San Francisco, CA</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Employment Type</td>
+                                                    <td>Full-time</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Experience</td>
+                                                    <td>Mid-level</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status</td>
+                                                    <td>Open</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Description</td>
+                                                    <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all redical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hiring Lead</td>
+                                                    <td><div class="imageUser"><img src="img/dennis_ritchie2.jpg" class="img-responsive" alt="image"></div><p>Tom Tizzy</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Approved Salary</td>
+                                                    <td>$58,000</td>
+                                                </tr>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="row">
-                                            <a href=""><i>aa</i> <span>asdasd</span></a>
-                                            <a href=""><i>aa</i> <span>asdasd</span></a>
-                                            <a href=""><i>aa</i> <span>asdasd</span></a>
                                             <div>
-                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Link to this Job</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga distinctio modi voluptatum omnis nisi molestias voluptas magni, culpa fugiat blanditiis sit accusamus numquam exercitationem quisquam quos iste eius ratione delectus.</p>
-                                                <input type="text">
-                                            </div>
-                                            <div>
-                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Use the Button Widget</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate reiciendis eligendi cupiditate maxime saepe libero assumenda, impedit, dolore amet, officiis labore. Quidem modi exercitationem tenetur numquam ipsa cumque, minima.</p>
-                                                <input type="text">
-                                            </div>
-                                            <div>
-                                                <i class="fa fa-map-marker" aria-hidden="true"></i><h3>Upload Resume by Email</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minima consectetur distinctio omnis ducimus error! Doloribus eaque obcaecati facilis molestiae ex incidunt, iure, ut, commodi facere aliquam quis itaque magni.</p>
-                                                <input type="text">
+                                                <a href="" class="fb">Post to Facebook</a>
+                                                <a href="" class="tw">Tweet this Job</a>
+                                                <a href="" class="in">Post to Linkedin</a>
+                                                <div>
+                                                    <i class="fa fa-globe" aria-hidden="true"></i><h3>Link to this Job</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Integer mollis neque eget vestibpend</p>
+                                                    <form class="form-horizontal">
+                                                        <div class="form-group has-success has-feedback">
+                                                            <div class="col-sm-12">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess2Status" value="http://loremipsum.dol/sit amet...">
+                                                                    <span class="input-group-addon">Copy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div>
+                                                    <i class="fa f fa-list-alt" aria-hidden="true"></i><h3>Use the Button Widget</h3>
+                                                    <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                                                    <form class="form-horizontal">
+                                                        <div class="form-group has-success has-feedback">
+                                                            <div class="col-sm-12">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status" value='<script type="text/javascript"s...'>
+                                                                    <span class="input-group-addon">Copy</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div>
+                                                    <i class="fa  fa-paper-plane" aria-hidden="true"></i><h3>Upload Resume by Email</h3>
+                                                    <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
+                                                    <form class="form-horizontal">
+                                                      <div class="form-group has-success has-feedback">
+                                                        <div class="col-sm-12">
+                                                          <div class="input-group">
+                                                            <input type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess2Status" value="tomtizzy@gmail.com">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
