@@ -1,4 +1,49 @@
 window.onload=function(){
+	setfunc1=true;
+	$("#js_il").click(function(event) {
+
+		
+		if(setfunc1){
+			$(".js_col_2").css('margin-left', '-300px');
+
+			$(".js_col_10").css('width', '100%');
+			//hideFunc();
+
+		}
+		else{
+
+			$(".js_col_10").css('width', '83.33333333%');
+			$(".js_col_2").css('margin-left', '3px');
+			
+			//setTimeout(hideFunc,800)
+
+		}
+
+		/* Act on the event */
+	});
+
+
+// function hideFunc(){
+// 	if(setfunc1){
+// 		$(".js_col_2").css('display', 'none');
+// 		setfunc1=false;
+// 	}
+// 	else{
+// 		$(".js_col_2").css('display', 'block')
+// 		setfunc1=true;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+	//****************** canvas 
 		var canvas1 = document.getElementById("canvas1");
 		var canvas2 = document.getElementById("canvas2");
 		var canvas3 = document.getElementById("canvas3");
@@ -70,10 +115,7 @@ window.onload=function(){
 			if(degrees<new_degrees){
 				degrees++;
 			}
-			else
-			{
-				clearInterval(animation_loop);
-			}
+			
 			init(ctx,canvas);
 		}
 		draw();
@@ -135,32 +177,32 @@ $( "#fa-angle-down" ).click(function() {
 
 
 // for catch right
- var myArry=[150,50,80,38,80,20,10,50,90,150,50,20,150,140]
+ var myArry=[50,230,300,382,180,220,100,50,300,380,250,200,150,100]
     for (var i=0; i<14;i++){
-    			var spinner = document.createElement("div");
-    			spinner.setAttribute('class', 'spinner');
-    			spinner.style.left=(i+1)*25+"px";
-				document.getElementsByClassName("parent")[0].appendChild(spinner);
-    			var spinner2 = document.createElement("div");
-    			spinner2.style.left=(i+1)*25+"px";
-    			spinner2.setAttribute('class', 'spinner2');
-				document.getElementsByClassName("parent")[0].appendChild(spinner2);
+		var spinner = document.createElement("div");
+		spinner.setAttribute('class', 'spinner');
+		spinner.style.left=(i+1)*27+"px";
+		document.getElementsByClassName("parent")[0].appendChild(spinner);
+		var spinner2 = document.createElement("div");
+		spinner2.style.left=(i+1)*27+"px";
+		spinner2.setAttribute('class', 'spinner2');
+		document.getElementsByClassName("parent")[0].appendChild(spinner2);
     }
     			
-    		function first(){
-    			for (var i = 0; i < 14; i++) {
-	    			if(document.getElementsByClassName("spinner2")[i].offsetHeight >myArry[i])
-	    			{
-	    				//clearInterval(t)
-	    			}
+	function chartVertical(){
+		for (var i = 0; i < 14; i++) {
+			if(document.getElementsByClassName("spinner2")[i].offsetHeight >(myArry[i]/3))
+			{
+				//clearInterval(t)
+			}
 
-	    			else{
-					document.getElementsByClassName("spinner2")[i].style.height=document.getElementsByClassName("spinner2")[i].offsetHeight+1+"px";
+			else{
+			document.getElementsByClassName("spinner2")[i].style.height=document.getElementsByClassName("spinner2")[i].offsetHeight+1+"px";
 
-	    			}
-    			}
-    			
-    		
-    		}
-    		first();
-    		var t= setInterval(first,10)
+			}
+		}
+		
+	
+	}
+	chartVertical();
+	var t= chartVertical(chartVertical,10);
