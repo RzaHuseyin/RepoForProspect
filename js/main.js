@@ -1,8 +1,17 @@
 window.onload=function(){
 
 	//**************  left menu 
-	setfunc1=true;
+	var setfunc1=true;
+	var countOnload=0;
 	$("#js_li, #media_li").click(function(event) {
+
+		// change setfunc when onload page if  max-width 992px   js_col_2 is left :-800px; this 'if' for function change begining setfunc1 (> first else run)
+		if($("#media_li").position().top > 10 && countOnload==0){
+			setfunc1= false;
+			++countOnload;
+		}
+
+		//main if for function
 		if(setfunc1){
 			$(".js_col_2").css('margin-left', '-300px');
 			$(".js_col_2").css('left', '-800px');
@@ -21,8 +30,6 @@ window.onload=function(){
 			setfunc1=true;
 		}
 	});
-
-
 
 	//****************** canvas 
 
@@ -46,61 +53,61 @@ window.onload=function(){
 		forTestCanvas(ctx3,canvas3, color3);
 
 		function forTestCanvas(ctx,canvas,color){
-		var W= canvas.width;
-		var H= canvas.height;
-		var degrees =0;
-		var new_degrees=0;
-		var bgcolor= "#d9e4eb"
-		var text;
-		// background 
-		function init(ctxcopy,canvascopy){
-			ctx.clearRect(0,0,W,H);
+			var W= canvas.width;
+			var H= canvas.height;
+			var degrees =0;
+			var new_degrees=0;
+			var bgcolor= "#d9e4eb"
+			var text;
+			// background 
+			function init(ctxcopy,canvascopy){
+				ctx.clearRect(0,0,W,H);
 
-			ctx.beginPath();
-			ctx.strokeStyle= bgcolor;
-			ctx.lineWidth=10;
-			ctx.arc(W/3,H/2,60,0,Math.PI*2,false);
-			ctx.stroke();
+				ctx.beginPath();
+				ctx.strokeStyle= bgcolor;
+				ctx.lineWidth=10;
+				ctx.arc(W/3,H/2,60,0,Math.PI*2,false);
+				ctx.stroke();
 
-			var radians = degrees * Math.PI/180;
-			ctx.beginPath();
-			ctx.strokeStyle= color;
-			ctx.lineWidth=10;
-			ctx.arc(W/3,H/2,60,0 - 90*Math.PI/180, radians-90*Math.PI/180,false);
-			ctx.stroke();
-			//text of canvas center
-			ctx.fillStyle="#596679";
-			ctx.font="30px arila";
-			text= (Math.floor(degrees/360*100)+3) *20;
+				var radians = degrees * Math.PI/180;
+				ctx.beginPath();
+				ctx.strokeStyle= color;
+				ctx.lineWidth=10;
+				ctx.arc(W/3,H/2,60,0 - 90*Math.PI/180, radians-90*Math.PI/180,false);
+				ctx.stroke();
+				//text of canvas center
+				ctx.fillStyle="#596679";
+				ctx.font="30px arila";
+				text= (Math.floor(degrees/360*100)+3) *20;
 
-			//     push span total text 
-			count++;
-			txt+=text;
-			if (count>2) {
-				$(".charts_footer div span span").text(txt)
-				txt=0;
-				count=0;
+				//     push span total text 
+				count++;
+				txt+=text;
+				if (count>2) {
+					$(".charts_footer div span span").text(txt)
+					txt=0;
+					count=0;
+				}
+				// for text of canvas center   -if  (text have   3 string). 
+				if(text<1000){
+					text+=" "
+				}
+				//    end span text edit
+				text_width=ctx.measureText(text).width;
+				ctx.fillText(text,W/2.3-text_width,H/2+15); 
 			}
-			// for text of canvas center   -if  (text have   3 string). 
-			if(text<1000){
-				text+=" "
+			function draw(){
+				new_degrees=Math.round(Math.random()*360);
+				var animation_loop = setInterval(animate_to,10);
 			}
-			//    end span text edit
-			text_width=ctx.measureText(text).width;
-			ctx.fillText(text,W/2.3-text_width,H/2+15); 
-		}
-		function draw(){
-			new_degrees=Math.round(Math.random()*360);
-			var animation_loop = setInterval(animate_to,10);
-		}
-		function animate_to(){
-			if(degrees<new_degrees){
-				degrees++;
+			function animate_to(){
+				if(degrees<new_degrees){
+					degrees++;
+				}
+				init(ctx,canvas);
 			}
-			init(ctx,canvas);
+			draw();
 		}
-		draw();
-	}
 	//***** for input checked
 	// var myArr=[];
 	// for (var i =0; i< $("#left .categoriesList ul li").length; i++) {

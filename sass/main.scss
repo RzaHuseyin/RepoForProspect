@@ -78,6 +78,30 @@ ul{
 				#left{
 					padding-top: 1px;
 					position: relative;
+					.headerLeft{
+						text-align: center;
+						div{
+							margin: 0 auto;
+							&:first-child{
+								width: 80px;
+								height: 80px;
+								border-radius: 100%;
+								overflow: hidden;
+								margin-top: 18px;
+								img{
+									width: 100%;
+								}
+							}
+							&:last-child{
+								margin-top: 18px;
+								h4{
+									cursor: pointer;
+									color: white;
+									font-size: 16px;
+								}
+							}
+						}
+					}
 					>div{
 						border-bottom: 3px solid #2b3544;
 						padding: 18px 0 10px 0px;
@@ -125,30 +149,7 @@ ul{
 							}
 						}
 					}
-					.headerLeft{
-						text-align: center;
-						div{
-							margin: 0 auto;
-							&:first-child{
-								width: 80px;
-								height: 80px;
-								border-radius: 100%;
-								overflow: hidden;
-								margin-top: 18px;
-								img{
-									width: 100%;
-								}
-							}
-							&:last-child{
-								margin-top: 18px;
-								h4{
-									cursor: pointer;
-									color: white;
-									font-size: 16px;
-								}
-							}
-						}
-					}
+					
 				}
 			}
 		}
@@ -176,7 +177,7 @@ ul{
 								cursor: pointer;
 								padding-top: 23px;
 								transition-duration: 0.5s;
-								.fa-caret-left{
+								.fa-caret-left,.fa-caret-right{
 									color:#15a4fa;
 									font-size: 20px;
 									margin-right: 3px;
@@ -801,6 +802,7 @@ ul{
 	}
 	.main_section > div .js_col_2 {
 		width: 240px;
+		left: -800px;
 	}
 	.main_section > div .js_col_10 > div #right .main .charts .col5 {
 		width: 100%;

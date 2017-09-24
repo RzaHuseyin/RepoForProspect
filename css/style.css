@@ -67,6 +67,24 @@ ul {
   .main_section > div .js_col_2 > div #left {
     padding-top: 1px;
     position: relative; }
+    .main_section > div .js_col_2 > div #left .headerLeft {
+      text-align: center; }
+      .main_section > div .js_col_2 > div #left .headerLeft div {
+        margin: 0 auto; }
+        .main_section > div .js_col_2 > div #left .headerLeft div:first-child {
+          width: 80px;
+          height: 80px;
+          border-radius: 100%;
+          overflow: hidden;
+          margin-top: 18px; }
+          .main_section > div .js_col_2 > div #left .headerLeft div:first-child img {
+            width: 100%; }
+        .main_section > div .js_col_2 > div #left .headerLeft div:last-child {
+          margin-top: 18px; }
+          .main_section > div .js_col_2 > div #left .headerLeft div:last-child h4 {
+            cursor: pointer;
+            color: white;
+            font-size: 16px; }
     .main_section > div .js_col_2 > div #left > div {
       border-bottom: 3px solid #2b3544;
       padding: 18px 0 10px 0px; }
@@ -103,24 +121,6 @@ ul {
           margin-right: 9px; }
           .main_section > div .js_col_2 > div #left > div ul li input:nth-child(1) {
             background-color: red; }
-    .main_section > div .js_col_2 > div #left .headerLeft {
-      text-align: center; }
-      .main_section > div .js_col_2 > div #left .headerLeft div {
-        margin: 0 auto; }
-        .main_section > div .js_col_2 > div #left .headerLeft div:first-child {
-          width: 80px;
-          height: 80px;
-          border-radius: 100%;
-          overflow: hidden;
-          margin-top: 18px; }
-          .main_section > div .js_col_2 > div #left .headerLeft div:first-child img {
-            width: 100%; }
-        .main_section > div .js_col_2 > div #left .headerLeft div:last-child {
-          margin-top: 18px; }
-          .main_section > div .js_col_2 > div #left .headerLeft div:last-child h4 {
-            cursor: pointer;
-            color: white;
-            font-size: 16px; }
 .main_section > div .js_col_10 {
   background-color: white;
   transition: all 0.8s ease;
@@ -142,7 +142,7 @@ ul {
         cursor: pointer;
         padding-top: 23px;
         transition-duration: 0.5s; }
-        .main_section > div .js_col_10 > div #right .navbar ul li .fa-caret-left {
+        .main_section > div .js_col_10 > div #right .navbar ul li .fa-caret-left, .main_section > div .js_col_10 > div #right .navbar ul li .fa-caret-right {
           color: #15a4fa;
           font-size: 20px;
           margin-right: 3px; }
@@ -610,7 +610,8 @@ ul {
     z-index: 99; }
 
   .main_section > div .js_col_2 {
-    width: 240px; }
+    width: 240px;
+    left: -800px; }
 
   .main_section > div .js_col_10 > div #right .main .charts .col5 {
     width: 100%; }
