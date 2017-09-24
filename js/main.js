@@ -14,7 +14,7 @@ window.onload=function(){
 		else{
 			$(".js_col_2").css('margin-left', '0px');
 			$(".js_col_2").css('left', '0px');
-			if($("#media_li").position().top <17){
+			if($("#media_li").position().top < 10){
 				$(".js_col_10").css('width', 'calc(83.33333333% - 6px)');
 			}
 			$("#js_li .fa-caret-left, #media_li .fa-caret-left").removeClass('fa-caret-right')
@@ -172,7 +172,7 @@ $( "#fa-angle-down" ).click(function() {
 		if(i>10){
 			spinnerDiynamicTooltip.style.transform = "rotate(-90deg)";
 			spinnerDiynamicTooltip.style.bottom = "20%";
-			spinnerDiynamicTooltip.style.left = "-250%";
+			spinnerDiynamicTooltip.style.left = "-280%";
 		}
 
 		//create bottom letter 

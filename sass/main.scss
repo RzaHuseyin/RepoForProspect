@@ -1,29 +1,28 @@
 body{
 	font-family: 'Roboto', sans-serif;
- 	 margin:0;    //5555555555555555555555555555555555555
+ 	margin:0;    //5555555555555555555555555555555555555
   	font-size: 14px;
-  	 line-height: 1.42857143;
-  	 background-color: #354052;
-
-
+  	line-height: 1.42857143;
+  	background-color: #354052;
 }
 html{
   font-size: 10px;
 
 }
-*{
-          box-sizing: border-box;
 
+ //edit common element
+*{
+  	box-sizing: border-box;
 }
 table{
 	border-collapse: collapse;
-	td,th{
-		//padding: 0;
-	}
 }
 a {
-  color: #337ab7;
-  text-decoration: none;
+ 	color: #337ab7;
+  	text-decoration: none;
+  	&:hover{
+		text-decoration: none;
+	}
 }
 h1,h2,h3{
 	margin-top: 20px;
@@ -40,7 +39,9 @@ h2{
   font-size: 30px;
 }
 h3{
-  font-size: 24px;
+	font-size: 24px;
+  	display: inline-block;
+	margin-top: 12px;
 }
 h4{
   font-size: 18px;
@@ -58,8 +59,19 @@ ul{
 	list-style: none;
 	padding: 1px;
 }
-.container-fluid{
+.fa-circle{
+	font-size: 5px;
+	position: relative;
+	&:before{
+		position: absolute;
+		top:-7px;
+	}
+}
+
+//  start   all body
+.main_section{
 	>div{
+		//left 
 		.js_col_2{
 			transition:all 0.9s ease;
 			>div{
@@ -140,6 +152,7 @@ ul{
 				}
 			}
 		}
+		//right
 		.js_col_10{
 			background-color: white;
 			transition: all 0.8s ease;
@@ -150,10 +163,10 @@ ul{
 						width: 100%;
 						float: right;
 						margin-top: -15px;
-
 						ul{
 							width: 100%;
 							border-bottom: 1px solid #e5e7ea;
+							text-align: center;
 							li{
 								display: inline-block;
 								width: 85px;
@@ -173,8 +186,6 @@ ul{
 									    margin-left: 20px;
 									    margin-right: 10px;
 								}
-								
-								
 								&:nth-child(3){
 									width: calc(100% - 355px);
 									text-align: left;
@@ -188,7 +199,6 @@ ul{
 											border-bottom:1px solid #e5e7ea;
 										    outline: none ;
 										}
-
 									}
 									&:hover{
 										background-color: white;
@@ -197,7 +207,7 @@ ul{
 										}
 									}
 								}
-								a{
+								i{
 									font-size: 24px;
 									color: #9ba3af;
 								}
@@ -210,11 +220,12 @@ ul{
 								z-index: 999;
 								width: 50px;
 								height:50px;
-								padding: 7px 10px 0 7px;
+								padding: 12px 10px 0 7px;
 								border-radius: 50%;
 								background-color: white;
 								border:0;
 							}
+							// end 3 il < ul element 
 							.navbarListElment{
 								&:hover{
 									background-color: #15a4fa;
@@ -313,6 +324,7 @@ ul{
 							}
 						}
 					}
+					//start main
 					.main{
 						background-color: #ecf2f6;
 						float: right;
@@ -336,6 +348,8 @@ ul{
 							.col5{
 								float: right;
 								>div{
+
+									// start editing element: ; add with javascript 
 									#chartdiv-right {
 										width	: 100%;
 										min-height	: 200px;
@@ -396,7 +410,7 @@ ul{
 												    background-color: #555;
 												    opacity: 0;
 												    color: #fff;
-												    left: -40%;
+												    left: -75%;
 												    text-align: center;
 												    padding: 10px 2px;
 												    margin-left: -60px;
@@ -453,9 +467,6 @@ ul{
 										}
 										i{
 											width: 15px;
-											&:before{
-												//top:-5px;
-											}
 										}
 									}
 								}
@@ -502,6 +513,9 @@ ul{
 													box-sizing: border-box;
 													&:last-child{
 														padding-top: 20px;
+													}
+													&:last-child{
+														text-align: left;
 													}
 													a{
 														padding: 10px 18px;
@@ -599,6 +613,7 @@ ul{
 											margin-bottom: 20px;
 											padding-bottom: 33px;
 											border-bottom: 2px solid #d2dae2 ;
+											max-height: 197px;
 											&:last-child{
 												border:none;
 												padding-bottom: 0;
@@ -649,7 +664,6 @@ ul{
 													display: block;
 												}
 											}
-											
 										}
 									}
 								}
@@ -661,25 +675,6 @@ ul{
 		}	
 	}
 }
-.fa-circle{
-	font-size: 5px;
-	position: relative;
-	&:before{
-		position: absolute;
-		top:-7px;
-	}
-}
-h3{
-	display: inline-block;
-	margin-top: 12px;
-}
-a{
-	&:hover{
-		text-decoration: none;
-	}
-}
-
-
 
 // 1  #ffd507
 // 2   #2aafff
@@ -726,56 +721,64 @@ a{
 	    width: calc(8.33333333% - 6px);
 	  }
   }
-
-  @media screen and (max-width: 1273px) {
-
-
-	.container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div input{
+@media screen and (max-width: 1273px) {
+	.main_section > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div input{
 		width: 70% ;
 	}
-
-  }
-
-  @media screen and (max-width: 1232px) {
- 	.container-fluid > div .js_col_10 > div #right .main .charts .col5 {
+	.main_section > div .js_col_10 > div #right .main .listinput .col8 > div table tr td:nth-child(1){
+		width: 30%;
+	}
+}
+@media screen and (max-width: 1232px) {
+ 	.main_section > div .js_col_10 > div #right .main .charts .col5 {
   		float: inherit;
   		width: 70%;
   		text-align: left;
   		>div{
-  			margin-left: 15%;
+  			&:first-child{
+  				margin-left: 20%;
+  			}
   		}
   	}
-  	.container-fluid > div .js_col_10 > div #right .main .charts {
+  	.main_section > div .js_col_10 > div #right .main .charts {
 		text-align: center;
   	}
-  	.container-fluid > div .js_col_10 > div #right .main .charts .charts_footer {
+  	.main_section > div .js_col_10 > div #right .main .charts .charts_footer {
   		margin-bottom: 30px;
   	}
 }
- @media screen and (max-width: 1090px) {
- 	.container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas{
+@media screen and (max-width: 1143px) {
+	.main_section > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul li{
+		margin-right: 3%;
+	}
+	.main_section > div .js_col_10 > div #right .main .charts .col5 {
+  		>div{
+  			&:first-child{
+  				margin-left: 13%;
+  			}
+  		}
+  	}
+}
+@media screen and (max-width: 1090px) {
+ 	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas{
  		width: 22em;
  	}
-
- }
-  @media screen and (max-width: 1000px) {
-  		.container-fluid > div .js_col_10 > div #right .headerRight > div >div {
-  			width: 100%;
-  			text-align: center;
-  		}
-  		.container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div {
-  			text-align: center;
-  		}
-
-
-  }
-  @media screen and (max-width: 992px) {
-  	.container-fluid > div .js_col_10 > div #right .main .charts  .col7 .charts_left {
-
-  		    margin-left: 4em;
-	  	 .col4 {
+}
+@media screen and (max-width: 1000px) {
+	.main_section > div .js_col_10 > div #right .headerRight > div >div {
+		width: 100%;
+		text-align: center;
+	}
+	.main_section > div .js_col_10 > div #right .headerRight > div .col4 > div {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 992px) {
+  	.main_section > div .js_col_10 > div #right .main .charts  .col7 .charts_left {
+  		margin-left: 4em;
+	  	.col4 {
 	  		
-		    width: calc(33.33333333% - 9px) !important;
+			width: calc(33.33333333% - 9px) !important;
 		    display: inline-block;
 		}
 		canvas{
@@ -787,22 +790,37 @@ a{
 	}
 	#media_li{
 		display: block !important;
-		top:17px !important;
+		top:13px !important;
 	}
-	.container-fluid > div .js_col_2 {
+	.main_section > div .js_col_2 {
 		position: absolute;
 		top: 0px;
-		left: 0px;
+		left:0px;
 	    background-color: #354052;
 	    z-index: 99;
 	}
-	.container-fluid > div .js_col_2 {
-		width: 100%;
+	.main_section > div .js_col_2 {
+		width: 240px;
 	}
-
+	.main_section > div .js_col_10 > div #right .main .charts .col5 {
+		width: 100%;
+  		>div{
+  			&:first-child{
+  				margin-left: 23%;
+  			}
+  		}
   	}
-  @media screen and (max-width: 794px) {
-  	.container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left {
+  	.main_section > div .js_col_10 > div #right .main .listinput .col4{
+		float: inherit;
+  		>div >div{
+  			width: 240px;
+  			margin: 0 auto;
+  			float: inherit;
+  		}
+  	}
+}
+@media screen and (max-width: 808px) {
+  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left {
   		margin-left: 22%;
 	  	.col4{
 	 		width: 100% !important;
@@ -811,21 +829,48 @@ a{
 	 		}
 	 	}
 	}
-  }
- @media screen and (max-width: 505px) {
-		
-.container-fluid > div .js_col_10 > div #right .main .charts .col5 {
-  		display: none;
+	.main_section > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul li{
+		margin-right: 1%;
+	}
+}
+@media screen and (max-width: 688px) {
+	.main_section > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul{
+		padding-top: 15px;
+		clear: both;
+		text-align: center;
+		li{
+			margin:0 auto;
+			display: block;	
+			width: 7em;
+		}
+	}
+	.main_section > div .js_col_10 > div #right .main .charts .col5 	>div{
+		&:first-child{
+			margin-left: 15%;
+		}
+	}
+	.main_section > div .js_col_10 > div #right .navbar ul li:nth-child(3) {
+		width: 100%;
+	}
+	.main_section > div .js_col_10 > div #right .navbar ul  .navbarListElment {
+		width: 70px;
+		height: 70px;
+	}
+}
+@media screen and (max-width: 523px) {
+	.main_section > div .js_col_10 > div #right .main .charts .col5 >div {
+		&:first-child{
+			margin-left: 1%;
+		}
   	}
-
- }
- @media screen and (max-width: 423px) {
- 	.container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4  canvas{
-		width: 15em;
- 	}
- }
- @media screen and (max-width: 423px) {
- 	.container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4  canvas{
+}
+@media screen and (max-width: 455px) {
+	.main_section > div .js_col_10 > div #right .main .charts .col5 {
+        display: none;
+  	}
+}
+@media screen and (max-width: 423px) {
+ 	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4  canvas{
 		width: 12em;
  	}
- }
+}
