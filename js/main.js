@@ -1,49 +1,26 @@
 window.onload=function(){
+
+	//**************  left menu 
 	setfunc1=true;
 	$("#js_il").click(function(event) {
-
-		
 		if(setfunc1){
 			$(".js_col_2").css('margin-left', '-300px');
-
+			$("#js_il .fa-caret-left").addClass('fa-caret-right')
 			$(".js_col_10").css('width', '100%');
-			//hideFunc();
-
+			setfunc1=false;
 		}
 		else{
-
 			$(".js_col_10").css('width', '83.33333333%');
-			$(".js_col_2").css('margin-left', '3px');
-			
-			//setTimeout(hideFunc,800)
-
+			$(".js_col_2").css('margin-left', '0px');
+			$("#js_il .fa-caret-left").removeClass('fa-caret-right')
+			setfunc1=true;
 		}
-
-		/* Act on the event */
 	});
-
-
-// function hideFunc(){
-// 	if(setfunc1){
-// 		$(".js_col_2").css('display', 'none');
-// 		setfunc1=false;
-// 	}
-// 	else{
-// 		$(".js_col_2").css('display', 'block')
-// 		setfunc1=true;
-// 	}
-// }
-
-
-
-
-
-
-
 
 
 
 	//****************** canvas 
+
 		var canvas1 = document.getElementById("canvas1");
 		var canvas2 = document.getElementById("canvas2");
 		var canvas3 = document.getElementById("canvas3");
@@ -115,37 +92,26 @@ window.onload=function(){
 			if(degrees<new_degrees){
 				degrees++;
 			}
-			
 			init(ctx,canvas);
 		}
 		draw();
 	}
-}
+	//***** for input checked
+	// var myArr=[];
+	// for (var i =0; i< $("#left .categoriesList ul li").length; i++) {
+	// 		myArr.push($("#left .categoriesList ul li")[i])
+	// 	}
 
-
-
-$(document).ready(function(){
-
-		myArr=[];
-
-	for (var i =0; i< $("#left .categoriesList ul li").length; i++) {
-			myArr.push($("#left .categoriesList ul li")[i])
-		}
-
-
-
-	$("#left .categoriesList ul li").click(function(a) {
-		
-		$("#left .categoriesList input").attr('checked', false);
-		var z= myArr.indexOf(a)
-		// $("#left .categoriesList input")[z].attr('checked', true);
-		console.log(z)
-	});
-
+	// $("#left .categoriesList ul li").click(function(fare) {
+	// 	//var z= myArr.indexOf(fare)
+	// 	//$("#left .categoriesList input")[z].attr('checked', true);
+	// 	// $("#left .categoriesList input")[z].attr('checked', true);
+	// 	console.log(fare)
+	// });
 
 // for list click 
-$(".headerRight .col-md-12 ul li").click(function(event) {
-	$(".headerRight .col-md-12 ul li").css({
+$(".headerRight .col12 ul li").click(function(event) {
+	$(".headerRight .col12 ul li").css({
 		"borderBottomColor": 'transparent',
 		"color": '#8a95a5'
 	});
@@ -153,56 +119,82 @@ $(".headerRight .col-md-12 ul li").click(function(event) {
 		"borderBottomColor": '#15a4fa',
 		"color": 'black'
 	});
-
 	/* Act on the event */
 });
 
 
-});
-var z=true;
+// charts section fadeToogle 
+
+var setDownFunc=true;
 $( "#fa-angle-down" ).click(function() {
 	$(".charts").fadeToggle('slow', function() {
 	});
-	if(z){
+	if(setDownFunc){
 		$(this).addClass('fa-angle-down');
-		z=false;
+		setDownFunc=false;
 	}
 	else{
 		$(this).removeClass('fa-angle-down')
-		z=true;
+		setDownFunc=true;
 	}
 
 	/* Act on the event */
 });
 
 
-// for catch right
- var myArry=[50,230,300,382,180,220,100,50,300,380,250,200,150,100]
+
+//************ for catch right
+
+ var myArryCount=[50,230,300,382,180,220,100,50,300,380,250,200,150,100]
+ var myArryLetter=["S","M","T","W","T","F","S","S","M","T","w","T","F","S"]
+
+ //for clearinterval chartVertical
+    var sum=0;
     for (var i=0; i<14;i++){
 		var spinner = document.createElement("div");
 		spinner.setAttribute('class', 'spinner');
 		spinner.style.left=(i+1)*27+"px";
 		document.getElementsByClassName("parent")[0].appendChild(spinner);
-		var spinner2 = document.createElement("div");
-		spinner2.style.left=(i+1)*27+"px";
-		spinner2.setAttribute('class', 'spinner2');
-		document.getElementsByClassName("parent")[0].appendChild(spinner2);
+		var spinnerDiynamic = document.createElement("div");
+
+		// create tooltip for each div 
+		var spinnerDiynamicTooltip = document.createElement("span");
+		spinnerDiynamicTooltip.setAttribute('class', 'spinnerDiynamicTooltip');
+		spinnerDiynamicTooltip.innerHTML="Wednesday,December3 "+myArryCount[i]+"Applicants/" +Math.floor(Math.random()*50)+" Interviews";
+		spinnerDiynamic.appendChild(spinnerDiynamicTooltip);
+
+		// for right div tooltip is rotate 90deg
+		if(i>10){
+			spinnerDiynamicTooltip.style.transform = "rotate(-90deg)";
+			spinnerDiynamicTooltip.style.bottom = "20%";
+			spinnerDiynamicTooltip.style.left = "-250%";
+		}
+
+		//create bottom letter 
+		var spinnerDiynamicLetter = document.createElement("span");
+		spinnerDiynamicLetter.setAttribute('class', 'spinnerDiynamicLetter');
+		spinnerDiynamicLetter.innerHTML= myArryLetter[i];
+		spinnerDiynamic.appendChild(spinnerDiynamicLetter);
+		
+
+
+		spinnerDiynamic.style.left=(i+1)*27+"px";
+		spinnerDiynamic.setAttribute('class', 'spinnerDiynamic');
+		document.getElementsByClassName("parent")[0].appendChild(spinnerDiynamic);
     }
-    			
 	function chartVertical(){
+		sum++;
 		for (var i = 0; i < 14; i++) {
-			if(document.getElementsByClassName("spinner2")[i].offsetHeight >(myArry[i]/3))
+			if(document.getElementsByClassName("spinnerDiynamic")[i].offsetHeight >(myArryCount[i]/3))
 			{
-				//clearInterval(t)
+				if(sum>130){clearInterval(t)}	
 			}
-
 			else{
-			document.getElementsByClassName("spinner2")[i].style.height=document.getElementsByClassName("spinner2")[i].offsetHeight+1+"px";
-
+			document.getElementsByClassName("spinnerDiynamic")[i].style.height=document.getElementsByClassName("spinnerDiynamic")[i].offsetHeight+1+"px";
 			}
 		}
-		
-	
 	}
 	chartVertical();
-	var t= chartVertical(chartVertical,10);
+	var t= setInterval(chartVertical,10);
+}
+

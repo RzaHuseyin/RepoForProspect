@@ -1,76 +1,127 @@
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #354052; }
 
-.container-fluid {
-  background-color: #354052;
-  overflow: hidden; }
-  .container-fluid .row .js_col_2 {
-    transition: all 1s ease;
-    overflow: hidden; }
-    .container-fluid .row .js_col_2 .row #left {
-      padding-top: 1px;
-      position: relative; }
-      .container-fluid .row .js_col_2 .row #left > div {
-        border-bottom: 3px solid #2b3544;
-        padding: 18px 0 20px 10px; }
-        .container-fluid .row .js_col_2 .row #left > div h6 {
-          font-size: 13px;
-          color: #a0abbe;
-          margin-left: 17px; }
-        .container-fluid .row .js_col_2 .row #left > div ul li {
-          background-color: #354052;
-          border: none;
-          cursor: pointer;
-          color: #a0abbe;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-size: 12px; }
-          .container-fluid .row .js_col_2 .row #left > div ul li:hover {
-            border-left: 3px solid #15a4fa;
-            background-color: #2f3949;
+html {
+  font-size: 10px; }
+
+* {
+  box-sizing: border-box; }
+
+table {
+  border-collapse: collapse; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+h4, h5, h6 {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+p {
+  margin: 0 0 10px; }
+
+ul {
+  list-style: none;
+  padding: 1px; }
+
+.container-fluid > div .js_col_2 {
+  transition: all 0.9s ease; }
+  .container-fluid > div .js_col_2 > div #left {
+    padding-top: 1px;
+    position: relative; }
+    .container-fluid > div .js_col_2 > div #left > div {
+      border-bottom: 3px solid #2b3544;
+      padding: 18px 0 10px 0px; }
+      .container-fluid > div .js_col_2 > div #left > div h6 {
+        font-size: 13px;
+        color: #a0abbe;
+        margin-left: 25px; }
+      .container-fluid > div .js_col_2 > div #left > div ul li {
+        padding-left: 25px;
+        line-height: 40px;
+        background-color: #354052;
+        cursor: pointer;
+        color: #a0abbe;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px; }
+        .container-fluid > div .js_col_2 > div #left > div ul li:hover {
+          border-left: 3px solid #15a4fa;
+          background-color: #2f3949;
+          color: white; }
+          .container-fluid > div .js_col_2 > div #left > div ul li:hover a {
             color: white; }
-            .container-fluid .row .js_col_2 .row #left > div ul li:hover a {
-              color: white; }
-          .container-fluid .row .js_col_2 .row #left > div ul li a {
-            color: #a0abbe;
-            text-decoration: none;
-            font-size: 14px; }
-            .container-fluid .row .js_col_2 .row #left > div ul li a i {
-              margin-right: 17px;
-              font-size: 18px;
-              width: 14px; }
-          .container-fluid .row .js_col_2 .row #left > div ul li input {
-            width: 19px;
-            height: 15px;
-            margin-right: 9px; }
-      .container-fluid .row .js_col_2 .row #left .headerLeft {
-        text-align: center; }
-        .container-fluid .row .js_col_2 .row #left .headerLeft div {
-          margin: 0 auto; }
-          .container-fluid .row .js_col_2 .row #left .headerLeft div:first-child {
-            width: 80px;
-            height: 80px;
-            border-radius: 100%;
-            overflow: hidden;
-            margin-top: 18px; }
-            .container-fluid .row .js_col_2 .row #left .headerLeft div:first-child img {
-              width: 100%; }
-          .container-fluid .row .js_col_2 .row #left .headerLeft div:last-child {
-            margin-top: 18px; }
-            .container-fluid .row .js_col_2 .row #left .headerLeft div:last-child h4 {
-              color: white;
-              font-size: 16px; }
-  .container-fluid .row .js_col_10 {
-    background-color: white;
-    transition: all 0.8s ease;
-    float: right; }
-    .container-fluid .row .js_col_10 .row #right .nav ul {
-      margin-left: 0;
+        .container-fluid > div .js_col_2 > div #left > div ul li a {
+          color: #a0abbe;
+          text-decoration: none;
+          font-size: 14px; }
+          .container-fluid > div .js_col_2 > div #left > div ul li a i {
+            margin-right: 17px;
+            font-size: 18px;
+            width: 14px; }
+        .container-fluid > div .js_col_2 > div #left > div ul li input {
+          width: 19px;
+          height: 15px;
+          margin-right: 9px; }
+          .container-fluid > div .js_col_2 > div #left > div ul li input:nth-child(1) {
+            background-color: red; }
+    .container-fluid > div .js_col_2 > div #left .headerLeft {
+      text-align: center; }
+      .container-fluid > div .js_col_2 > div #left .headerLeft div {
+        margin: 0 auto; }
+        .container-fluid > div .js_col_2 > div #left .headerLeft div:first-child {
+          width: 80px;
+          height: 80px;
+          border-radius: 100%;
+          overflow: hidden;
+          margin-top: 18px; }
+          .container-fluid > div .js_col_2 > div #left .headerLeft div:first-child img {
+            width: 100%; }
+        .container-fluid > div .js_col_2 > div #left .headerLeft div:last-child {
+          margin-top: 18px; }
+          .container-fluid > div .js_col_2 > div #left .headerLeft div:last-child h4 {
+            color: white;
+            font-size: 16px; }
+.container-fluid > div .js_col_10 {
+  background-color: white;
+  transition: all 0.8s ease;
+  float: right; }
+  .container-fluid > div .js_col_10 > div #right .navbar {
+    width: 100%;
+    float: right;
+    margin-top: -15px; }
+    .container-fluid > div .js_col_10 > div #right .navbar ul {
       width: 100%;
-      list-style-type: none;
-      border-bottom: 1px solid #e5e7ea;
-      padding: 0; }
-      .container-fluid .row .js_col_10 .row #right .nav ul li {
+      border-bottom: 1px solid #e5e7ea; }
+      .container-fluid > div .js_col_10 > div #right .navbar ul li {
+        display: inline-block;
         width: 85px;
         height: 80px;
         border-left: 1px solid #e5e7ea;
@@ -78,56 +129,61 @@ body {
         cursor: pointer;
         padding-top: 23px;
         transition-duration: 0.5s; }
-        .container-fluid .row .js_col_10 .row #right .nav ul li .fa-caret-left {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li .fa-caret-left {
           color: #15a4fa;
           font-size: 20px;
           margin-right: 3px; }
-        .container-fluid .row .js_col_10 .row #right .nav ul li .fa-search {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li .fa-search {
           font-size: 20px;
           margin-left: 20px;
           margin-right: 10px; }
-        .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(3):hover, .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(4):hover, .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(5):hover {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(4):hover, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(5):hover {
           background-color: #15a4fa; }
-          .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(3):hover a, .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(4):hover a, .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(5):hover a {
+          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover a, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(4):hover a, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(5):hover a {
             color: white; }
-        .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(2) {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) {
           width: calc(100% - 355px);
-          text-align: left; }
-          .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(2) input {
-            width: 50%;
+          text-align: left;
+          cursor: inherit; }
+          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) input {
+            min-width: 50%;
             border: none;
             font-size: 16px;
             padding: 6px; }
-            .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(2) input:focus {
+            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) input:focus {
               border-bottom: 1px solid #e5e7ea;
               outline: none; }
-          .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(2):hover {
+          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2):hover {
             background-color: white; }
-            .container-fluid .row .js_col_10 .row #right .nav ul li:nth-child(2):hover a {
+            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2):hover a {
               color: #9ba3af; }
-        .container-fluid .row .js_col_10 .row #right .nav ul li a {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li a {
           font-size: 24px;
           color: #9ba3af; }
-    .container-fluid .row .js_col_10 .row #right .headerRight {
-      margin-top: 26px; }
-      .container-fluid .row .js_col_10 .row #right .headerRight > div {
-        margin: 0 auto;
-        width: 92%; }
-        .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-8 > div {
-          color: #8a95a5; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-8 > div h2 {
-            margin-top: 10px;
-            color: #4e515e; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-8 > div i {
-            margin-right: 10px; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-8 > div p {
-            display: inline-block; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-8 > div a {
-            color: #34b0fa; }
-        .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-4 > div {
-          margin-top: 25px;
+  .container-fluid > div .js_col_10 > div #right .headerRight {
+    padding-top: 15px;
+    clear: both; }
+    .container-fluid > div .js_col_10 > div #right .headerRight > div {
+      margin: 0 auto;
+      width: 92%; }
+      .container-fluid > div .js_col_10 > div #right .headerRight > div .col8 > div {
+        color: #8a95a5; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col8 > div h2 {
+          font-weight: 400;
+          margin-top: 14px;
+          color: #596679; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col8 > div i {
+          margin-right: 10px; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col8 > div p {
+          display: inline-block; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col8 > div a {
+          color: #34b0fa; }
+      .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 {
+        float: right;
+        margin-top: 30px; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div {
           text-align: right; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-4 > div > div {
+          .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div > div {
             color: #6f7a8b;
             width: 37px;
             height: 37px;
@@ -138,78 +194,79 @@ body {
             margin-right: 8px;
             padding-top: 7px;
             cursor: pointer; }
-            .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-4 > div > div:first-child {
+            .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div > div:first-child {
               border-radius: 2em;
               width: 90px; }
-              .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-4 > div > div:first-child .fa-circle {
+              .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div > div:first-child .fa-circle {
                 font-family: "Roboto",sans-serif;
                 font-size: 14px;
                 margin-left: 7px;
                 font-weight: 600;
                 text-transform: uppercase; }
-                .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-4 > div > div:first-child .fa-circle:before {
+                .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div > div:first-child .fa-circle:before {
                   font-family: FontAwesome;
                   font-size: 14px;
                   color: #8cc63d;
                   top: 0px;
                   left: -15px; }
-        .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-12 .row > div {
-          margin-top: 27px; }
-          .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-12 .row > div ul {
-            margin-bottom: 0;
-            margin-left: 0; }
-            .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-12 .row > div ul li {
-              color: #8a95a5;
-              text-transform: uppercase;
-              border: 0;
-              border-radius: 0;
-              border-bottom: 3px solid transparent;
-              cursor: pointer;
-              margin-right: 40px;
-              font-weight: bold;
-              padding: 10px 0 15px 0; }
-              .container-fluid .row .js_col_10 .row #right .headerRight > div .col-md-12 .row > div ul li:first-child {
-                border-bottom-color: #15a4fa;
-                color: black; }
-    .container-fluid .row .js_col_10 .row #right .main {
-      background-color: #ecf2f6;
-      float: right; }
-      .container-fluid .row .js_col_10 .row #right .main > div {
-        margin: 0 auto;
-        width: 92%; }
-      .container-fluid .row .js_col_10 .row #right .main .charts {
-        min-height: 300px;
-        margin-top: 50px; }
-        .container-fluid .row .js_col_10 .row #right .main .charts .col-md-7 .charts_left {
-          min-height: 170px;
-          margin-left: -5em;
-          text-align: center; }
-        .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right {
+      .container-fluid > div .js_col_10 > div #right .headerRight > div .col12 > div > div {
+        margin-top: 18px; }
+        .container-fluid > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul {
+          margin-bottom: 0; }
+          .container-fluid > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul li {
+            display: inline-block;
+            color: #8a95a5;
+            text-transform: uppercase;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            margin-right: 40px;
+            font-weight: bold;
+            padding: 10px 0 15px 0; }
+            .container-fluid > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul li:first-child {
+              border-bottom-color: #15a4fa;
+              color: black; }
+  .container-fluid > div .js_col_10 > div #right .main {
+    background-color: #ecf2f6;
+    float: right; }
+    .container-fluid > div .js_col_10 > div #right .main > div {
+      margin: 0 auto;
+      width: 92%; }
+    .container-fluid > div .js_col_10 > div #right .main .charts {
+      min-height: 300px;
+      margin-top: 50px; }
+      .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left {
+        min-height: 170px;
+        margin-left: -3em; }
+        .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas {
+          display: inline-block;
+          width: 27em; }
+      .container-fluid > div .js_col_10 > div #right .main .charts .col5 {
+        float: right; }
+        .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right {
           width: 100%;
-          min-height: 200px;
-          font-size: 11px; }
-          .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent1 {
+          min-height: 200px; }
+          .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent1 {
             min-height: 180px;
             position: relative;
             display: inline-block;
             width: 20px; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent1 .text {
+            .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent1 .text {
               width: 30px;
               height: 200px;
               position: absolute;
-              top: 1px;
+              top: 0;
               left: 3px;
               text-align: right; }
-              .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent1 .text p {
+              .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent1 .text p {
                 font-size: 14px;
                 font-weight: 600;
-                margin-bottom: 12px;
+                margin-bottom: 13px;
                 color: #8a95a5; }
-          .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent {
+          .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent {
             min-height: 180px;
             position: relative;
             display: inline-block; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent .spinner {
+            .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinner {
               width: 15px;
               height: 180px;
               background: #d9e4eb;
@@ -217,7 +274,7 @@ body {
               position: absolute;
               top: 1px;
               left: 3px; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row #chartdiv-right .parent .spinner2 {
+            .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinnerDiynamic {
               width: 15px;
               height: 5px;
               background: #47bac1;
@@ -225,109 +282,139 @@ body {
               border-top-left-radius: 4px;
               border-top-right-radius: 4px;
               position: absolute;
-              bottom: 1px;
+              bottom: 0px;
               left: 3px; }
-        .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row .chartdiv-right-footer {
-          margin-top: -25px; }
-          .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row .chartdiv-right-footer ul {
-            margin-left: 49px; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .row .chartdiv-right-footer ul li {
-              padding-right: 9px;
-              border: none;
-              background-color: transparent;
-              font-weight: bold; }
-        .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .charts_footer {
-          margin-top: 0 !important; }
-          .container-fluid .row .js_col_10 .row #right .main .charts .col-md-5 .charts_footer span {
+              .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinnerDiynamic:hover .spinnerDiynamicTooltip {
+                visibility: visible;
+                opacity: 1; }
+              .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinnerDiynamic .spinnerDiynamicTooltip {
+                visibility: hidden;
+                width: 150px;
+                background-color: #555;
+                opacity: 0;
+                color: #fff;
+                left: -40%;
+                text-align: center;
+                padding: 10px 2px;
+                margin-left: -60px;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 99;
+                bottom: 120%;
+                transition: opacity 0.8s;
+                font-size: 11px; }
+                .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinnerDiynamic .spinnerDiynamicTooltip:after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 8px;
+                  border-style: solid;
+                  border-color: #555 transparent transparent transparent; }
+              .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div #chartdiv-right .parent .spinnerDiynamic .spinnerDiynamicLetter {
+                font-weight: bold;
+                color: #596679;
+                position: absolute;
+                left: 3px;
+                bottom: -25px; }
+        .container-fluid > div .js_col_10 > div #right .main .charts .col5 .charts_footer {
+          margin-top: 25px !important; }
+          .container-fluid > div .js_col_10 > div #right .main .charts .col5 .charts_footer span {
             text-transform: uppercase; }
-        .container-fluid .row .js_col_10 .row #right .main .charts .charts_footer {
-          text-align: center;
-          margin-top: 30px; }
-          .container-fluid .row .js_col_10 .row #right .main .charts .charts_footer > div > span {
-            color: #8a95a5;
-            font-weight: 600;
-            background-color: #fafafc;
-            border: 1px solid #d9e4eb;
-            border-radius: 2em;
-            padding: 7px 13px;
-            position: relative; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .charts_footer > div > span span {
-              display: inline-block;
-              width: 40px; }
-            .container-fluid .row .js_col_10 .row #right .main .charts .charts_footer > div > span i {
-              width: 15px; }
-      .container-fluid .row .js_col_10 .row #right .main #js_chards {
-        border-bottom: 2px solid #9ba3af;
-        position: relative; }
-        .container-fluid .row .js_col_10 .row #right .main #js_chards #fa-angle-down {
-          color: #9ba3af;
-          cursor: pointer;
-          text-align: center;
-          font-size: 20px;
-          padding: 4px 8px;
+      .container-fluid > div .js_col_10 > div #right .main .charts .charts_footer {
+        text-align: center;
+        margin-top: 30px; }
+        .container-fluid > div .js_col_10 > div #right .main .charts .charts_footer > div > span {
+          color: #8a95a5;
+          font-weight: 600;
           background-color: #fafafc;
-          border: 1px solid #9ba3af;
-          border-radius: 50%;
-          position: absolute;
-          top: -13px;
-          left: 48%; }
-          .container-fluid .row .js_col_10 .row #right .main #js_chards #fa-angle-down:before {
-            z-index: 555; }
-      .container-fluid .row .js_col_10 .row #right .main .listinput {
-        margin-top: 70px; }
-        .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive {
-          background-color: white; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table {
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-            overflow: hidden;
-            color: #596679; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child {
-              background-color: #6f7d95;
+          border: 1px solid #d9e4eb;
+          border-radius: 2em;
+          padding: 7px 13px;
+          position: relative; }
+          .container-fluid > div .js_col_10 > div #right .main .charts .charts_footer > div > span span {
+            display: inline-block;
+            width: 40px; }
+          .container-fluid > div .js_col_10 > div #right .main .charts .charts_footer > div > span i {
+            width: 15px; }
+    .container-fluid > div .js_col_10 > div #right .main #js_chards {
+      border-bottom: 2px solid #9ba3af;
+      position: relative; }
+      .container-fluid > div .js_col_10 > div #right .main #js_chards #fa-angle-down {
+        color: #9ba3af;
+        cursor: pointer;
+        text-align: center;
+        font-size: 20px;
+        padding: 4px 8px;
+        background-color: #fafafc;
+        border: 1px solid #9ba3af;
+        border-radius: 50%;
+        position: absolute;
+        top: -13px;
+        left: 48%; }
+        .container-fluid > div .js_col_10 > div #right .main #js_chards #fa-angle-down:before {
+          z-index: 555; }
+    .container-fluid > div .js_col_10 > div #right .main .listinput {
+      padding-top: 70px;
+      clear: both; }
+      .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div {
+        background-color: white; }
+        .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table {
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          overflow: hidden;
+          color: #596679; }
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child {
+            background-color: #6f7d95;
+            text-transform: uppercase;
+            color: white; }
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child th {
+              padding: 29px 0 20px 29px;
+              box-sizing: border-box; }
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child th:last-child {
+                padding-top: 20px; }
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child th a {
+                padding: 10px 18px;
+                background-color: #7c8ba6;
+                color: white;
+                border-radius: 3px;
+                font-weight: 600;
+                font-family: 'Roboto',sans-serif; }
+                .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child th a:before {
+                  content: "\f040";
+                  font-family: FontAwesome;
+                  font-weight: 100; }
+                .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr:first-child th a:hover:before {
+                  color: #d9e4eb;
+                  transform: rotateX(150deg); }
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr td {
+            padding: 27px 0 27px 27px;
+            line-height: 22px; }
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr td:nth-child(1) {
+              width: 24%;
               text-transform: uppercase;
-              color: white; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child th {
-                padding: 29px 0 20px 29px;
-                box-sizing: border-box; }
-                .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child th:last-child {
-                  padding-top: 20px; }
-                .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child th a {
-                  padding: 10px 18px;
-                  background-color: #7c8ba6;
-                  color: white;
-                  border-radius: 3px;
-                  font-weight: 600;
-                  font-family: 'Roboto',sans-serif; }
-                  .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child th a:before {
-                    content: "\f040";
-                    font-family: FontAwesome;
-                    font-weight: 100; }
-                  .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr:first-child th a:hover:before {
-                    color: #d9e4eb;
-                    transform: rotateX(150deg); }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr td {
-              padding: 27px 0 27px 27px;
-              line-height: 22px; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr td:nth-child(1) {
-                width: 23%;
-                text-transform: uppercase;
-                font-weight: bold; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr td .imageUser {
-                width: 40px;
-                height: 40px;
-                border-radius: 100%;
-                overflow: hidden;
-                display: inline-block;
-                float: left; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-8 .row .table_responsive table tr td p {
-                display: inline-block;
-                line-height: 20px;
-                margin-top: 10px; }
-        .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div {
+              font-weight: bold; }
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr td .imageUser {
+              width: 40px;
+              height: 40px;
+              border-radius: 100%;
+              overflow: hidden;
+              display: inline-block;
+              float: left; }
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr td .imageUser img {
+                width: 100%; }
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col8 > div table tr td p {
+              display: inline-block;
+              line-height: 20px;
+              margin-top: 10px; }
+      .container-fluid > div .js_col_10 > div #right .main .listinput .col4 {
+        float: right; }
+        .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div {
           color: #596679;
           float: right;
           width: 83%; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div a {
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div a {
             display: block;
             padding: 17px 0 13px 75px;
             background-color: red;
@@ -335,72 +422,67 @@ body {
             margin-bottom: 20px;
             position: relative;
             color: white; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div a:before {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div a:before {
               font-family: FontAwesome;
               position: absolute;
               left: 17px;
               top: 13px;
               font-size: 20px; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .fb {
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .fb {
             background-color: #496ec1; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .fb:before {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .fb:before {
               content: "\f09a"; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .tw {
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .tw {
             background-color: #00a9ef; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .tw:before {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .tw:before {
               content: "\f099"; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .in {
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .in {
             background-color: #0381bd; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div .in:before {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div .in:before {
               content: "\f08c"; }
-          .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div {
+          .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div {
             margin-bottom: 20px;
-            padding-bottom: 33px;
+            padding-bottom: 44px;
             border-bottom: 2px solid #d2dae2; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div:last-child {
-              border: none; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div i {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div:last-child {
+              border: none;
+              padding-bottom: 0; }
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div i {
               font-size: 18px;
               margin-right: 10px; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div h3 {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div h3 {
               font-size: 18px;
               font-weight: 600; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div p {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div p {
               letter-spacing: 0.0025em;
               font-size: 13px;
               font-weight: 600;
               color: #8892a0; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div form {
+            .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div {
               margin-top: 30px;
               width: 100% !important; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div form span {
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div span {
                 background-color: #47bac1;
+                padding: 11px 10px;
                 border: none;
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
                 color: white;
                 cursor: pointer; }
-              .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div form input {
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div input {
                 height: 40px;
+                width: 80%;
                 border: none;
                 font-size: 14px;
                 font-weight: 400;
                 font-family: 'Roboto',sans-serif;
-                padding-right: 5px; }
-                .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div form input:focus {
-                  box-shadow: none; }
-            .container-fluid .row .js_col_10 .row #right .main .listinput .col-md-4 > div > div > div:last-child .input-group {
-              display: block; }
-
-#canvas1 {
-  display: inline-block;
-  width: 27em; }
-
-#canvas2 {
-  display: inline-block;
-  width: 27em; }
-
-#canvas3 {
-  display: inline-block;
-  width: 27em; }
+                padding-left: 10px;
+                margin-right: -3px; }
+                .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div input:focus {
+                  box-shadow: none;
+                  outline: none; }
+              .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div:last-child {
+                display: block; }
 
 .fa-circle {
   font-size: 5px;
@@ -409,17 +491,51 @@ body {
     position: absolute;
     top: -7px; }
 
-.amcharts-export-menu {
-  display: none !important; }
-
-.amcharts-chart-div a {
-  display: none !important; }
-
 h3 {
   display: inline-block;
   margin-top: 12px; }
 
 a:hover {
   text-decoration: none; }
+
+@media (min-width: 992px) {
+  .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+    display: inline-block; }
+
+  .col12 {
+    width: calc( 100% - 3px ); }
+
+  .col11 {
+    width: calc(91.66666667% - 6px); }
+
+  .col10 {
+    width: calc(83.33333333% - 6px); }
+
+  .col9 {
+    width: calc(75% - 6px); }
+
+  .col8 {
+    width: calc(66.66666667% - 6px); }
+
+  .col7 {
+    width: calc(58.33333333% - 6px); }
+
+  .col6 {
+    width: calc(50% - 6px); }
+
+  .col5 {
+    width: calc(41.66666667% - 6px); }
+
+  .col4 {
+    width: calc(33.33333333% - 6px); }
+
+  .col3 {
+    width: calc(25% - 6px); }
+
+  .col2 {
+    width: calc(16.66666667% - 6px); }
+
+  .col1 {
+    width: calc(8.33333333% - 6px); } }
 
 /*# sourceMappingURL=style.css.map */
