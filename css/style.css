@@ -107,6 +107,7 @@ ul {
         .container-fluid > div .js_col_2 > div #left .headerLeft div:last-child {
           margin-top: 18px; }
           .container-fluid > div .js_col_2 > div #left .headerLeft div:last-child h4 {
+            cursor: pointer;
             color: white;
             font-size: 16px; }
 .container-fluid > div .js_col_10 {
