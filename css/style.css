@@ -138,29 +138,41 @@ ul {
           font-size: 20px;
           margin-left: 20px;
           margin-right: 10px; }
-        .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(4):hover, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(5):hover {
-          background-color: #15a4fa; }
-          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover a, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(4):hover a, .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(5):hover a {
-            color: white; }
-        .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) {
+        .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3) {
           width: calc(100% - 355px);
           text-align: left;
           cursor: inherit; }
-          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) input {
+          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3) input {
             min-width: 50%;
             border: none;
             font-size: 16px;
             padding: 6px; }
-            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2) input:focus {
+            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3) input:focus {
               border-bottom: 1px solid #e5e7ea;
               outline: none; }
-          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2):hover {
+          .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover {
             background-color: white; }
-            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(2):hover a {
+            .container-fluid > div .js_col_10 > div #right .navbar ul li:nth-child(3):hover a {
               color: #9ba3af; }
         .container-fluid > div .js_col_10 > div #right .navbar ul li a {
           font-size: 24px;
           color: #9ba3af; }
+      .container-fluid > div .js_col_10 > div #right .navbar ul #media_li {
+        display: none;
+        position: absolute;
+        top: 16px;
+        left: 0px;
+        z-index: 999;
+        width: 50px;
+        height: 50px;
+        padding: 7px 10px 0 7px;
+        border-radius: 50%;
+        background-color: white;
+        border: 0; }
+      .container-fluid > div .js_col_10 > div #right .navbar ul .navbarListElment:hover {
+        background-color: #15a4fa; }
+        .container-fluid > div .js_col_10 > div #right .navbar ul .navbarListElment:hover a {
+          color: white; }
   .container-fluid > div .js_col_10 > div #right .headerRight {
     padding-top: 15px;
     clear: both; }
@@ -538,5 +550,72 @@ a:hover {
 
   .col1 {
     width: calc(8.33333333% - 6px); } }
+@media screen and (max-width: 1273px) {
+  .container-fluid > div .js_col_10 > div #right .main .listinput .col4 > div > div > div > div input {
+    width: 70%; } }
+@media screen and (max-width: 1232px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col5 {
+    float: inherit;
+    width: 70%;
+    text-align: left; }
+    .container-fluid > div .js_col_10 > div #right .main .charts .col5 > div {
+      margin-left: 15%; }
+
+  .container-fluid > div .js_col_10 > div #right .main .charts {
+    text-align: center; }
+
+  .container-fluid > div .js_col_10 > div #right .main .charts .charts_footer {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 1090px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas {
+    width: 22em; } }
+@media screen and (max-width: 1000px) {
+  .container-fluid > div .js_col_10 > div #right .headerRight > div > div {
+    width: 100%;
+    text-align: center; }
+
+  .container-fluid > div .js_col_10 > div #right .headerRight > div .col4 > div {
+    text-align: center; } }
+@media screen and (max-width: 992px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left {
+    margin-left: 4em; }
+    .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 {
+      width: calc(33.33333333% - 9px) !important;
+      display: inline-block; }
+    .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas {
+      width: 18em; }
+
+  #js_li {
+    display: none !important; }
+
+  #media_li {
+    display: block !important;
+    top: 17px !important; }
+
+  .container-fluid > div .js_col_2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #354052;
+    z-index: 99; }
+
+  .container-fluid > div .js_col_2 {
+    width: 100%; } }
+@media screen and (max-width: 794px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left {
+    margin-left: 22%; }
+    .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 {
+      width: 100% !important; }
+      .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 canvas {
+        width: 22em; } }
+@media screen and (max-width: 505px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col5 {
+    display: none; } }
+@media screen and (max-width: 423px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 canvas {
+    width: 15em; } }
+@media screen and (max-width: 423px) {
+  .container-fluid > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 canvas {
+    width: 12em; } }
 
 /*# sourceMappingURL=style.css.map */

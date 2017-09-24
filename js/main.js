@@ -2,17 +2,22 @@ window.onload=function(){
 
 	//**************  left menu 
 	setfunc1=true;
-	$("#js_il").click(function(event) {
+	$("#js_li, #media_li").click(function(event) {
 		if(setfunc1){
 			$(".js_col_2").css('margin-left', '-300px');
-			$("#js_il .fa-caret-left").addClass('fa-caret-right')
+			$(".js_col_2").css('left', '-800px');
+
+			$("#js_li .fa-caret-left, #media_li .fa-caret-left").addClass('fa-caret-right')
 			$(".js_col_10").css('width', '100%');
 			setfunc1=false;
 		}
 		else{
-			$(".js_col_10").css('width', '83.33333333%');
 			$(".js_col_2").css('margin-left', '0px');
-			$("#js_il .fa-caret-left").removeClass('fa-caret-right')
+			$(".js_col_2").css('left', '0px');
+			if($("#media_li").position().top <17){
+				$(".js_col_10").css('width', 'calc(83.33333333% - 6px)');
+			}
+			$("#js_li .fa-caret-left, #media_li .fa-caret-left").removeClass('fa-caret-right')
 			setfunc1=true;
 		}
 	});
