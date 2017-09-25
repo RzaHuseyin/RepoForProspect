@@ -77,7 +77,7 @@ window.onload=function(){
 				ctx.stroke();
 				//text of canvas center
 				ctx.fillStyle="#596679";
-				ctx.font="30px arila";
+				ctx.font="30px 'Roboto', sans-serif";
 				text= (Math.floor(degrees/360*100)+3) *20;
 
 				//     push span total text 
@@ -94,7 +94,7 @@ window.onload=function(){
 				}
 				//    end span text edit
 				text_width=ctx.measureText(text).width;
-				ctx.fillText(text,W/2.3-text_width,H/2+15); 
+				ctx.fillText(text,W/2.3-text_width,H/2); 
 			}
 			function draw(){
 				new_degrees=Math.round(Math.random()*360);

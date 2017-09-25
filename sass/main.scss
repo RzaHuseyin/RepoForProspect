@@ -340,6 +340,42 @@ ul{
 								.charts_left{
 									min-height: 170px;
 									margin-left: -3em;
+									.col4{
+										position: relative;
+										>div{
+											&:before{
+												display: block;
+												position: absolute;
+												z-index: 2;
+												top: 53%;
+												left: 6.5em;
+												text-transform: uppercase;
+												font-weight: bold;
+												color: #8a95a5;
+											}
+										}
+										&:nth-child(1){
+											>div{
+												&:before{
+													content: "Applicants";
+												}
+											}
+										}
+										&:nth-child(2){
+											>div{
+												&:before{
+													content: "Interviews";
+												}
+											}
+										}
+										&:nth-child(3){
+											>div{
+												&:before{
+													content: "Forwards";
+												}
+											}
+										}
+									}
 									canvas{
 										display: inline-block;
 										width: 27em;
@@ -417,7 +453,7 @@ ul{
 												    margin-left: -60px;
 												    border-radius: 6px;
 												    position: absolute;
-												    z-index: 99;
+												    z-index: 2;
 												    bottom: 120%;
 												    transition: opacity 0.8s;
 													font-size: 11px;
@@ -489,7 +525,7 @@ ul{
     							top: -13px;
     							left: 48%;
 								&:before{
-	   								z-index: 555;
+	   								z-index: 2;
 								}
 							}
 						}
@@ -764,6 +800,9 @@ ul{
  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left canvas{
  		width: 22em;
  	}
+ 	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 4.6em;
+ 	}
 }
 @media screen and (max-width: 1000px) {
 	.main_section > div .js_col_10 > div #right .headerRight > div >div {
@@ -786,6 +825,10 @@ ul{
 			width: 18em;
 		}
 	}
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 4.7em;
+ 		font-size: 12px;
+ 	}
 	#js_li{
 		display: none !important;
 	}
@@ -798,7 +841,7 @@ ul{
 		top: 0px;
 		left:0px;
 	    background-color: #354052;
-	    z-index: 99;
+	    z-index: 5;
 	}
 	.main_section > div .js_col_2 {
 		width: 240px;
@@ -821,6 +864,11 @@ ul{
   		}
   	}
 }
+@media screen and (max-width: 950px) {
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		font-size: 11px;
+ 	}
+}
 @media screen and (max-width: 808px) {
   	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left {
   		margin-left: 22%;
@@ -834,6 +882,9 @@ ul{
 	.main_section > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul li{
 		margin-right: 1%;
 	}
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 34%;
+ 	}
 }
 @media screen and (max-width: 688px) {
 	.main_section > div .js_col_10 > div #right .headerRight > div .col12 > div > div ul{
@@ -845,6 +896,15 @@ ul{
 			display: block;	
 			width: 7em;
 		}
+	}
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left {
+  		margin-left: 22%;
+	  	.col4{
+	 		width: 100% !important;
+	 		canvas{
+	 			width: 28em;
+	 		}
+	 	}
 	}
 	.main_section > div .js_col_10 > div #right .main .charts .col5 	>div{
 		&:first-child{
@@ -858,21 +918,68 @@ ul{
 		width: 70px;
 		height: 70px;
 	}
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 28%;
+ 		font-size: 15px;
+ 	}
 }
-@media screen and (max-width: 523px) {
+@media screen and (max-width: 640px) {
+	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 25%;
+ 	}
+
+}
+@media screen and (max-width: 534px) {
 	.main_section > div .js_col_10 > div #right .main .charts .col5 >div {
 		&:first-child{
 			margin-left: 1%;
 		}
   	}
+  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 canvas{
+		width: 20em;
+	}
+  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 27%;
+ 		font-size: 11px;
+ 	}
 }
 @media screen and (max-width: 455px) {
 	.main_section > div .js_col_10 > div #right .main .charts .col5 {
         display: none;
   	}
+  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 25.5%;
+ 	}
 }
 @media screen and (max-width: 423px) {
  	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4  canvas{
 		width: 12em;
+		margin-bottom: 40px;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 28%;
+ 		top: 65%;
+ 	}
+}
+@media screen and (max-width: 345px) {
+ 	.main_section > div .js_col_10 > div #right .main .charts .col7 .charts_left .col4 > div:before {
+ 		left: 22%;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .main .listinput .col8 > div table tr td {
+ 		padding-left: 0;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .main .listinput .col4 > div > div {
+ 		width: 230px;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .headerRight > div .col4 > div > div {
+ 		display: block;
+ 		margin: 0 auto;
+ 		margin-bottom: 10px;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .headerRight > div .col8 > div i{
+ 		display: block;
+ 	}
+ 	.main_section > div .js_col_10 > div #right .navbar ul li:nth-child(3){
+ 		margin-top: 13px;
  	}
 }
